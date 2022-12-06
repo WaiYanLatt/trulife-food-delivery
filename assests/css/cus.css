@@ -5,14 +5,14 @@
   width: 50px;
 }
 .cl{
-  color: #bf1e2d;
+  color: #e42011;
 }
 .img-home{
   background-size: cover;
   width: 100%;
   height: 500px;
   border-radius: 35% 65% 56% 44% / 27% 47% 53% 73% ;
-  border: 5px solid #bf1e2d;
+  border: 5px solid #e42011;
 }
 .hg1{
   height: 500px;
@@ -22,16 +22,25 @@
   height: 100px;
 }
 .cl2{
-  color: #ee653c ;
+  color:  #e42011 ;
 }
-.slick-dots li.slick-active button:before {
-  color: #bf1e2d;
-  font-size: 20px;
+.card-img-top{
+  height: 300px;
 }
-.slick-dots{
-  color: blue;
-  font-size: 20px;
+.bg{
+  background-color: #ee653c;
 }
+.btn-danger{
+  background-color: #e42011;
+}
+.slick-dots li button:before {
+  background-color: #fff;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+
 @media screen and (max-width : 460px) {
   
 }
