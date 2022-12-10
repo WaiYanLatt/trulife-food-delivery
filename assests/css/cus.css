@@ -41,7 +41,7 @@
 .rad1 {
   border-radius: 0px 50px 0px 130px;
 }
-.list-group-item{
+.list-group-item {
   background-color: transparent;
   border: 0;
 }
@@ -95,6 +95,65 @@
 .class {
   top: -39px;
   left: 80px;
+}
+.loader {
+  width: 48px;
+  height: 40px;
+  margin-top: 30px;
+  display: inline-block;
+  position: relative;
+  background: black;
+  border-radius: 15% 15% 35% 35%;
+}
+.loader::after {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  left: 45px;
+  top: 8px;
+  border: 4px solid black;
+  width: 16px;
+  height: 20px;
+  border-radius: 0 4px 4px 0;
+}
+.loader::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 10px;
+  color: black;
+  top: -15px;
+  left: 11px;
+  box-sizing: border-box;
+  animation: animloader 1s ease infinite;
+}
+.loading {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--bs-white);
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 7;
+}
+
+@keyframes animloader {
+  0% {
+    box-shadow: 2px 0px rgb(245, 7, 7), 12px 0px rgba(255, 3, 3, 0.836),
+      20px 0px rgb(253, 15, 15);
+  }
+  50% {
+    box-shadow: 2px -5px rgba(255, 0, 0, 0.5), 12px -3px rgb(255, 10, 10),
+      20px -2px rgba(255, 0, 0, 0.6);
+  }
+  100% {
+    box-shadow: 2px -8px rgba(238, 3, 3, 0.918), 12px -5px rgb(241, 6, 6),
+      20px -5px rgba(240, 1, 1, 0);
+  }
 }
 @media screen and (max-width: 460px) {
 }
