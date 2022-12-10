@@ -90,7 +90,7 @@
   width: 250px;
   height: 300px;
   border-radius: 10%;
-  background-size: cover;
+  object-fit: cover;
 }
 .class {
   top: -39px;
@@ -156,4 +156,20 @@
   }
 }
 @media screen and (max-width: 460px) {
+   .img-home{
+    border-radius: 0px 50px 0px 50px;
+    border:0px;
+    margin-top: 50px;
+    height: 350px;
+   }
+   .w-1001{
+     width: 100%;
+   }
+   .d-no{
+    display: none;
+   }
+   .menu-img{
+    width: 100%;
+    border-radius:  0px 50px 0px 50px;
+   }
 }
