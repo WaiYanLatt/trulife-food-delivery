@@ -176,7 +176,7 @@
 .menu-icon span {
   width: 40px;
   height: 4px;
-  background-color:black;
+  background-color: black;
   position: absolute;
   border-radius: 25px;
   transition: 0.5s;
@@ -256,5 +256,8 @@
   }
   .hg2 {
     height: 100vh;
+  }
+  .menu-icon {
+    transform: scale(0.8);
   }
 }
